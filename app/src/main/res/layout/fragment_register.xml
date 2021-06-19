@@ -41,7 +41,7 @@
             android:gravity="center"/>
 
         <EditText
-            android:id="@+id/edt_id"
+            android:id="@+id/loginId"
             android:layout_weight="1.05"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -73,7 +73,7 @@
             android:gravity="center"/>
 
         <EditText
-            android:id="@+id/edt_pw"
+            android:id="@+id/loginPwd"
             android:layout_weight="1.05"
             android:layout_width="0dp"
             android:layout_height="match_parent"

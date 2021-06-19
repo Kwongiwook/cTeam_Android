@@ -37,7 +37,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/edt_id"
+                android:id="@+id/loginId"
                 android:layout_weight="0.4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -45,7 +45,7 @@
                 android:layout_marginLeft="20dp"/>
 
             <EditText
-                android:id="@+id/edt_pw"
+                android:id="@+id/loginPwd"
                 android:layout_weight="0.4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -63,7 +63,7 @@
 
             <Button
                 android:layout_weight="0.8"
-                android:id="@+id/login_btn"
+                android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:text="로그인"
@@ -87,7 +87,7 @@
         android:orientation="horizontal">
 
         <CheckBox
-            android:id="@+id/login_check"
+            android:id="@+id/loginCheck"
             android:layout_weight="0.3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -95,7 +95,7 @@
             android:layout_marginLeft="20dp"/>
 
         <TextView
-            android:id="@+id/search_info"
+            android:id="@+id/loginHelp"
             android:layout_weight="0.6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -124,7 +124,7 @@
 
             <Button
                 android:layout_marginTop="20dp"
-                android:id="@+id/join_btn"
+                android:id="@+id/regBtn"
                 android:layout_weight="0.84"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
@@ -136,14 +136,14 @@
 
 
             <Button
-                android:id="@+id/kakao_login"
+                android:id="@+id/loginKakao"
                 android:layout_marginTop="20dp"
                 android:layout_weight="0.84"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:text="카카오 로그인"
                 android:textColor="@color/black"
-                android:drawableLeft="@drawable/kakao_logo"
+                android:drawableLeft="@drawable/start_login_btn_kakano"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:gravity="left|center"
@@ -161,27 +161,27 @@
             android:gravity="center|top">
 
             <Button
-                android:id="@+id/google_login"
+                android:id="@+id/loginGoogle"
                 android:layout_marginTop="20dp"
                 android:layout_weight="0.84"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:text="구글 로그인"
                 android:textColor="@color/black"
-                android:drawableLeft="@drawable/google_logo"
+                android:drawableLeft="@drawable/start_login_btn_google"
                 android:textStyle="bold"
                 android:gravity="left|center"
                 android:backgroundTint="#ea4335"/>
 
             <Button
-                android:id="@+id/naver_login"
+                android:id="@+id/loginNaver"
                 android:layout_marginTop="20dp"
                 android:layout_weight="0.84"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:text="네이버 로그인"
                 android:textColor="@color/black"
-                android:drawableLeft="@drawable/naver_logo"
+                android:drawableLeft="@drawable/start_login_btn_naver"
                 android:textStyle="bold"
                 android:gravity="left|center"
                 android:backgroundTint="#00C43B"
