@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--tools:context=".JoinActivity"-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JoinActivity"
     android:orientation="vertical"
     android:weightSum="10"
     android:background="#F0F8FF">
@@ -20,7 +20,7 @@
         android:textColor="@color/black"
         android:gravity="center"
         android:layout_marginTop="40dp"
-        android:background="@drawable/border"
+        android:background="@drawable/start_register_text_border"
         android:layout_marginBottom="70dp"/>
 
     <LinearLayout
@@ -41,14 +41,14 @@
             android:gravity="center"/>
 
         <EditText
-            android:id="@+id/edt_id"
+            android:id="@+id/regId"
             android:layout_weight="1.05"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:hint="아이디를 입력해주세요."
             android:layout_marginRight="20dp"
             android:paddingLeft="15dp"
-            android:background="@drawable/border"/>
+            android:background="@drawable/start_register_text_border"/>
 
 
     </LinearLayout>
@@ -73,14 +73,14 @@
             android:gravity="center"/>
 
         <EditText
-            android:id="@+id/edt_pw"
+            android:id="@+id/regPwd"
             android:layout_weight="1.05"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:hint="비밀번호를 입력하세요."
             android:layout_marginRight="20dp"
             android:paddingLeft="10dp"
-            android:background="@drawable/border"/>
+            android:background="@drawable/start_register_text_border"/>
 
 
     </LinearLayout>
@@ -105,14 +105,14 @@
             android:gravity="center"/>
 
         <EditText
-            android:id="@+id/edt_nick"
+            android:id="@+id/regNick"
             android:layout_weight="1.05"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:hint="닉네임을 입력해주세요."
             android:layout_marginRight="20dp"
             android:paddingLeft="10dp"
-            android:background="@drawable/border"/>
+            android:background="@drawable/start_register_text_border"/>
 
 
     </LinearLayout>
@@ -137,20 +137,20 @@
             android:gravity="center"/>
 
         <EditText
-            android:id="@+id/edt_email"
+            android:id="@+id/regEmail"
             android:layout_weight="1.05"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:hint="이메일을 입력해주세요."
             android:layout_marginRight="20dp"
             android:paddingLeft="10dp"
-            android:background="@drawable/border"/>
+            android:background="@drawable/start_register_text_border"/>
 
     </LinearLayout>
 
     <Button
         android:layout_marginTop="5dp"
-        android:id="@+id/email_check"
+        android:id="@+id/regEmailCheck"
         android:layout_weight="1.2"
         android:layout_width="200dp"
         android:layout_height="0dp"
@@ -158,7 +158,7 @@
         android:textStyle="bold"
         android:layout_gravity="right"
         android:layout_marginRight="8dp"
-        android:background="@drawable/btn_border"/>
+        android:background="@drawable/start_login_btn_border"/>
 
 
     <LinearLayout
@@ -171,8 +171,8 @@
         android:gravity="center">
 
         <Button
-            android:background="@drawable/btn_border"
-            android:id="@+id/sign_btn"
+            android:background="@drawable/start_login_btn_border"
+            android:id="@+id/regSubmit"
             android:layout_weight="0.6"
             android:layout_width="0dp"
             android:layout_height="50dp"
@@ -187,8 +187,8 @@
 
 
         <Button
-            android:background="@drawable/btn_border"
-            android:id="@+id/cancel_btn"
+            android:background="@drawable/start_login_btn_border"
+            android:id="@+id/regCancel"
             android:layout_weight="0.6"
             android:layout_width="0dp"
             android:layout_height="50dp"
