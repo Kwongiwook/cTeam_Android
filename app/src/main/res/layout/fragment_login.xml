@@ -124,7 +124,7 @@
 
             <Button
                 android:layout_marginTop="20dp"
-                android:id="@+id/regBtn"
+                android:id="@+id/loginToReg"
                 android:layout_weight="0.84"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
