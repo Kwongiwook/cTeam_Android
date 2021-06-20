@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- 페이지 제목 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예약"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <!-- 예약자 성함 -->
+    <EditText
+        android:id="@+id/rsvNameEdt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="성함"
+        />
+
+    <!-- 예약자 전화번호 -->
+    <EditText
+        android:id="@+id/rsvTelEdt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="전화번호" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="날짜 선택"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <!-- 날짜 선택 -->
+    <!-- 어떻게 해야 할지 잘 몰라서 일단 이렇게 넣어 놨습니다 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="날짜선택" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시간 선택"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <!-- 시간 선택 버튼들-->
+        <Button
+            android:id="@+id/rsvTime11Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:textSize="15dp"
+            android:text="11:00"/>
+
+        <Button
+            android:id="@+id/rsvTime12Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:textSize="15dp"
+            android:text="12:00"/>
+
+        <Button
+            android:id="@+id/rsvTime13Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:textSize="15dp"
+            android:text="13:00"/>
+
+        <Button
+            android:id="@+id/rsvTime14Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:textSize="15dp"
+            android:text="14:00"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/rsvTime15Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:textSize="15dp"
+            android:text="15:00"/>
+
+        <Button
+            android:id="@+id/rsvTime16Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:textSize="15dp"
+            android:text="16:00"/>
+
+        <Button
+            android:id="@+id/rsvTime17Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:textSize="15dp"
+            android:text="17:00"/>
+
+        <Button
+            android:id="@+id/rsvTime18Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:textSize="15dp"
+            android:text="18:00"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="결제"
+            android:textSize="20dp"/>
+
+        <!-- 결제 라디오 버튼 -->
+        <RadioButton
+            android:id="@+id/rsvStoreRadio"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="매장 결제" />
+
+        <RadioButton
+            android:id="@+id/rsvKakaoRadio"
+            android:text="카카오페이"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <RadioButton
+            android:id="@+id/rsvCardRadio"
+            android:text="신용카드"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <!-- 결제 완료 버튼 -->
+        <Button
+            android:id="@+id/rsvPaymentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:text="결제"
+            android:textSize="15dp" />
+
+        <!-- 결제 취소 버튼 -->
+        <Button
+            android:id="@+id/rsvCancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="7dp"
+            android:text="취소"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
