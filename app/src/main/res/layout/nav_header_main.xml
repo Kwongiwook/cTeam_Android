@@ -19,14 +19,14 @@
         android:src="@drawable/ex_logo_1"/>
 
     <TextView
-        android:id="@+id/LoginID"
+        android:id="@+id/loginID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
         android:text="HANUL HAIR"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
     <TextView
-        android:id="@+id/LoginStr"
+        android:id="@+id/loginStr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"

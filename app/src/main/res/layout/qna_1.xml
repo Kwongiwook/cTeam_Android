@@ -11,7 +11,7 @@
 
     <!-- 제목 -->
     <TextView
-        android:id="@+id/TvQnA"
+        android:id="@+id/tvQnA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="QnA"
@@ -24,14 +24,14 @@
 
     <!-- 글 목록 -->
     <ListView
-        android:id="@+id/ListvQnA"
+        android:id="@+id/listvQnA"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:layout_weight="4" />
 
     <!--이 버튼 누르면 글 작성으로 넘어감-->
     <Button
-        android:id="@+id/BtnAddQnA"
+        android:id="@+id/btnAddQnA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
