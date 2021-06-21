@@ -10,7 +10,7 @@ import com.ssh.sustain_a.R;
     이 메인 액티비티는 테스트 용도로만 두었으며, 아마도 작동하지 않을겁니다.
  */
 
-public class expert_login extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
