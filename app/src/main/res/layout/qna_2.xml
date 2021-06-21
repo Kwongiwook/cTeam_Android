@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
+            android:id="@+id/Btn_Back"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
             android:background="@drawable/btn_back_1"/>
@@ -34,7 +35,7 @@
             android:orientation="horizontal"
             android:layout_weight="1">
             <CheckBox
-                android:id="@+id/Qna_check_1"
+                android:id="@+id/Qna_Check_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:focusable="false"
@@ -52,7 +53,7 @@
             android:orientation="horizontal"
             android:layout_weight="1">
             <CheckBox
-                android:id="@+id/Qna_check_2"
+                android:id="@+id/Qna_Check_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:focusable="false"
@@ -70,7 +71,7 @@
             android:orientation="horizontal"
             android:layout_weight="1">
             <CheckBox
-                android:id="@+id/Qna_check_3"
+                android:id="@+id/Qna_Check_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:focusable="false"
@@ -88,7 +89,7 @@
             android:orientation="horizontal"
             android:layout_weight="1">
             <CheckBox
-                android:id="@+id/Qna_check_4"
+                android:id="@+id/Qna_Check_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:focusable="false"
@@ -106,7 +107,7 @@
             android:orientation="horizontal"
             android:layout_weight="1">
             <CheckBox
-                android:id="@+id/Qna_check_5"
+                android:id="@+id/Qna_Check_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:focusable="false"
@@ -124,7 +125,7 @@
             android:orientation="horizontal"
             android:layout_weight="1">
             <CheckBox
-                android:id="@+id/Qna_check_6"
+                android:id="@+id/Qna_Check_6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:focusable="false"

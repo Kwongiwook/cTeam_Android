@@ -11,7 +11,7 @@
 
     <!-- 제목 -->
     <TextView
-        android:id="@+id/tvQnA"
+        android:id="@+id/TvQnA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="QnA"
@@ -31,7 +31,7 @@
 
     <!--이 버튼 누르면 글 작성으로 넘어감-->
     <Button
-        android:id="@+id/btnAddQnA"
+        android:id="@+id/BtnAddQnA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

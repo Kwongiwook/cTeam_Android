@@ -10,12 +10,12 @@
         android:layout_height="100dp"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/btn_back"
+            android:id="@+id/Btn_Back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/btn_back_1"/>
         <TextView
-            android:id="@+id/flag1_tv"
+            android:id="@+id/Text_Check"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="#ffffff"
@@ -34,6 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/> -->
     <TextView
+        android:id="@+id/Text_Check2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="10:00  태윤T 두피 \n 11: 00 원균T 컷 + 두피\n12:00 경훈T 두피\n15:30지욱T 두피"

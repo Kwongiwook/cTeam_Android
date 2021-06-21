@@ -7,7 +7,7 @@
     android:background="#ffffff">
 
     <Button
-        android:id="@+id/btn_back"
+        android:id="@+id/Btn_Back"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:background="@drawable/btn_back_1"/>
@@ -17,7 +17,7 @@
         android:layout_height="100dp"
         android:orientation="horizontal">
         <TextView
-            android:id="@+id/flag2_tv"
+            android:id="@+id/Tv_Check"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:background="#ffffff"
@@ -32,6 +32,7 @@
         android:layout_height="100dp"
         android:src="@drawable/rv_check"/>
     <TextView
+        android:id="@+id/Tv_Doucheck"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="20dp"

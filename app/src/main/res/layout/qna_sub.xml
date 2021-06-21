@@ -77,6 +77,7 @@
                 android:text="답변내용이 들어갈 부분"/>
 
             <Button
+                android:id="@+id/Btn_Check"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="답변하기"
