@@ -1,14 +1,10 @@
-package com.ssh.sustain_a.activity;
+package com.ssh.sustain_a.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
 import com.ssh.sustain_a.R;
-
-/*
-    이 메인 액티비티는 테스트 용도로만 두었으며, 아마도 작동하지 않을겁니다.
- */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,18 +13,4 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_expert);
     }
-
-    /*
-    kty
-     */
-
-	/*
-	kjw
-	*/
-
-
-    /*
-    wg
-    */
-	
 }

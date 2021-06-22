@@ -21,7 +21,7 @@
         >
 
         <!--앱이 실행될 때 가장 돌아갈 액티비티입니다.-->
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
