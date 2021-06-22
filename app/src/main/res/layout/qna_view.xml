@@ -21,7 +21,7 @@
 
 
             <ImageView
-                android:id="@+id/QnaRcvImgV"
+                android:id="@+id/qnaRcvImgV"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@mipmap/ic_launcher"/>
@@ -33,7 +33,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/QnaRcvTitleTv"
+                    android:id="@+id/qaRcvTitleTv"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:textSize="35dp"
@@ -41,7 +41,7 @@
                     android:textColor="#456789"/>
 
                 <TextView
-                    android:id="@+id/QnaContentTv"
+                    android:id="@+id/qnaContentTv"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:textSize="26dp"
