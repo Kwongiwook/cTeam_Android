@@ -1,4 +1,4 @@
-package com.ssh.sustain_a;
+package com.ssh.sustain;
 
 import android.content.Context;
 

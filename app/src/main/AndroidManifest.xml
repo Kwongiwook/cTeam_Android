@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ssh.sustain_a">
+    package="com.ssh.sustain">
 
     <!--안드로이드 프로젝트의 기본적인 설정이 담겨있습니다.
     액티비티 등을 추가하여 자동으로 생성되는 경우가 아니면 절대 건드리지 맙시다.-->
@@ -21,7 +21,7 @@
         >
 
         <!--앱이 실행될 때 가장 돌아갈 액티비티입니다.-->
-        <activity android:name=".activity.MainActivity">
+        <activity android:name="com.ssh.sustain.ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
