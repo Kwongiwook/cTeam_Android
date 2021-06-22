@@ -14,11 +14,11 @@
         android:layout_marginTop="20dp"/>
 
     <!-- 가게의 메뉴 -->
-    <ListView
-        android:id="@+id/shopMenuListV"
+    <!-- xml 파일 중 shop_menu_view와 같이 쓰는것입니다.-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopMenuRecyclerview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"/> <!-- 클릭 하면 예약하기로 이동 -->
+        android:layout_height="match_parent"/>
 
 
 

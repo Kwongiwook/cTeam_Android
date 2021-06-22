@@ -47,10 +47,11 @@
     </LinearLayout>
 
     <!-- 댓글 나오는 곳-->
-    <ListView
-        android:id="@+id/commentsListV"
+    <!-- xml 파일 중 community_comments_view와 같이 쓰는것입니다.-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commuCmtRecyclerview"
         android:layout_width="match_parent"
-        android:layout_height="486dp" />
+        android:layout_height="wrap_content"/>
 
 
     <LinearLayout

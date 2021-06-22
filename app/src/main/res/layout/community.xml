@@ -37,12 +37,11 @@
         android:layout_marginTop="10dp"/>
 
     <!-- 글 목록 -->
-    <ListView
-        android:id="@+id/commuListView"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:layout_weight="4"
-        android:layout_marginTop="10dp"/>
+    <!-- xml 파일 중 community_view와 같이 쓰는것입니다.-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commuRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
     <!--이 버튼 누르면 글 작성으로 넘어감-->

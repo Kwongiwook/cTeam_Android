@@ -55,12 +55,11 @@
 
     </LinearLayout>
 
-    <!-- 글 목록 -->
-    <ListView
-        android:id="@+id/QnaListV"
-        android:layout_width="wrap_content"
-        android:layout_height="400dp"
-        android:layout_weight="4" />
+    <!-- xml 파일 중 qna_view와 같이 쓰는것입니다.-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/qnaRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <!-- 글작성 버튼 qna_writing.xml로 이동  -->
     <Button

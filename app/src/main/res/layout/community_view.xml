@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
+    <!-- xml 파일 중 community와 연관있습니다.-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +21,7 @@
 
 
             <ImageView
-                android:id="@+id/shopMapImgView"
+                android:id="@+id/commuRcvImgV"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@mipmap/ic_launcher"/>
@@ -30,25 +31,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <TextView
-                    android:id="@+id/shopMapTitleTv"
+                    android:id="@+id/commuRcvTitleTv"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:textSize="35dp"
-                    android:text="매장명"
+                    android:text="제목"
                     android:textColor="#456789"/>
 
                 <TextView
-                    android:id="@+id/shopMapTelTv"
+                    android:id="@+id/commuRcvContentTv"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:textSize="26dp"
-                    android:text="매장 번호"
+                    android:text="내용"
                     android:textColor="#987654"/>
-
-
-
-
 
             </LinearLayout>
         </LinearLayout>
