@@ -1,4 +1,4 @@
-package com.ssh.sustain_a.ui.fragment;
+package com.ssh.sustain.ui.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
