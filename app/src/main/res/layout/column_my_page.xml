@@ -141,19 +141,16 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="40dp"/>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="169dp">
 
-        <!-- 이 부분은 작성한 컬럼의 목록을 보는 곳인데 TextView와 ListView중에 -->
-        <!-- 무엇으로 해야 할지 많이 고민되서 회의를 해봐야 할 것 같습니다. -->
-        <ListView
-            android:id="@+id/columnMyPageListView"
+
+        <!-- xml 파일 중 column_my_page_view와 같이 쓰는것입니다.-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/columnMyPageRecyclerview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent"/>
 
 
-    </ScrollView>
+
 </LinearLayout>
 
 

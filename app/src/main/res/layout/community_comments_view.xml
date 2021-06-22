@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
+    <!-- xml 파일 중 community_comments 와 연관있습니다.-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,7 +21,7 @@
 
 
             <ImageView
-                android:id="@+id/memoImgView"
+                android:id="@+id/commuCmtRcvImgV"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@mipmap/ic_launcher"/>
@@ -32,7 +33,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/memoTitle"
+                    android:id="@+id/commuCmtRcvTitleTv"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:textSize="35dp"
@@ -40,11 +41,11 @@
                     android:textColor="#456789"/>
 
                 <TextView
-                    android:id="@+id/memoContent"
+                    android:id="@+id/commuCmtRcvContentTv"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:textSize="26dp"
-                    android:text="두피상태에 대한 내용"
+                    android:text="내용"
                     android:textColor="#987654"/>
 
             </LinearLayout>
