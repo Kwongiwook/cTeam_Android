@@ -2,6 +2,8 @@ package com.ssh.sustain.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -12,10 +14,6 @@ import com.ssh.sustain.ui.presenter.MainPresenter;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View {
 
-    /*
-    아 존나 빠르네 시발 진짜 ㅋㅋㅋㅋ
-     */
-
     MainContract.Presenter mainPresenter;
 
     @Override
@@ -25,6 +23,15 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
 
         mainPresenter = new MainPresenter(this);
         initListener();
+    }
+
+    @Override
+    protected void onStart() {
+        /*
+        SharedPreference 검사해서 token 없으면 로그인 fragment로 보내버림.
+         */
+
+        super.onStart();
     }
 
     private void initListener() {
