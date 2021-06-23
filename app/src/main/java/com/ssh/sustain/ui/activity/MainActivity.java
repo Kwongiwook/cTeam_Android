@@ -1,46 +1,31 @@
 package com.ssh.sustain.ui.activity;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.navigation.NavigationView;
 import com.ssh.sustain.R;
 import com.ssh.sustain.ui.presenter.MainContract;
 import com.ssh.sustain.ui.presenter.MainPresenter;
 
-public class MainActivity extends AppCompatActivity implements MainContract.View {
+import java.util.Objects;
 
-    MainContract.Presenter mainPresenter;
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test_layout);
+        setContentView(R.layout.activity_base);
 
-        mainPresenter = new MainPresenter(this);
-        initListener();
-    }
-
-    @Override
-    protected void onStart() {
-        /*
-        SharedPreference 검사해서 token 없으면 로그인 fragment로 보내버림.
-         */
-
-        super.onStart();
-    }
-
-    private void initListener() {
-        findViewById(R.id.button_submit).setOnClickListener(v -> mainPresenter.addNums(1,2));
-    }
-
-    @Override
-    public void showResult(int result) {
-        //Todo logic
-        ((TextView)findViewById(R.id.email_input)).setText(Integer.toString(result));
     }
 }

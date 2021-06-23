@@ -24,7 +24,8 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="?attr/colorPrimary"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark"
-                app:layout_scrollFlags="scroll|enterAlways" />
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:menu="@menu/base_menu" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -36,11 +37,12 @@
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/baseDrawer"
+        android:id="@+id/baseNavigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_draw_menu" />
+
 
 </androidx.drawerlayout.widget.DrawerLayout>

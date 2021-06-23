@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
@@ -32,6 +33,8 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
     다.
      */
 
+    protected DrawerLayout baseDrawer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,21 +43,30 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public void setContentView(int layoutResID) {
-        DrawerLayout baseView = (DrawerLayout) getLayoutInflater().inflate(R.layout.activity_base, null);
+        LinearLayout baseView = (LinearLayout) getLayoutInflater().inflate(R.layout.activity_base, null);
         FrameLayout baseContent = (FrameLayout) baseView.findViewById(R.id.baseContent);
         getLayoutInflater().inflate(layoutResID, baseContent, true);
 
         super.setContentView(layoutResID);
 
-        Toolbar baseToolbar = (Toolbar) findViewById(R.id.baseToolbar);
-
+        Toolbar baseToolbar = (Toolbar) baseView.findViewById(R.id.baseToolbar);
         if (useToolbar()) {
             setSupportActionBar(baseToolbar);
-            setTitle("Example");
-            Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+            Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
+
+            baseDrawer = (DrawerLayout) findViewById(R.id.baseDrawer);
+            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                    this, baseDrawer, baseToolbar,
+                    R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+
+            baseDrawer.addDrawerListener(toggle);
+            toggle.syncState();
         } else {
             baseToolbar.setVisibility(View.GONE);
         }
+
+        NavigationView baseNavigation = (NavigationView) findViewById(R.id.baseNavigation);
+        baseNavigation.setNavigationItemSelectedListener(this);
     }
 
     protected boolean useToolbar() {
@@ -67,16 +79,27 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        return super.onOptionsItemSelected(item);
+        int id = item.getItemId();
+        if (id == R.id.action_menu1) {
+            return true;
+        } else if (id == R.id.action_menu2) {
+            return true;
+        } else if (id == R.id.action_settings) {
+            return true;
+        } else {
+            return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
+        if (baseDrawer.isDrawerOpen(GravityCompat.START)) {
+            baseDrawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 
     @Override
