@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.ssh.sustain.ui.activity.MainActivity">
 
+    <include layout="@layout/toolbar"/>
+
     <EditText
         android:id="@+id/name_input"
         android:layout_width="300dp"

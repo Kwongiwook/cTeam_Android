@@ -2,13 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ssh.sustain">
 
-    <!--안드로이드 프로젝트의 기본적인 설정이 담겨있습니다.
-    액티비티 등을 추가하여 자동으로 생성되는 경우가 아니면 절대 건드리지 맙시다.-->
-
+    <!--
+    안드로이드 프로젝트의 기본적인 설정이 담겨있습니다.
+    액티비티 등을 추가하여 자동으로 생성되는 경우가 아니면 절대 건드리지 맙시다.
+    -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-
 
     <application
         android:allowBackup="true"
@@ -16,35 +16,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Sustain_a"
-        android:usesCleartextTraffic="true"
-        >
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
 
-        <!--앱이 실행될 때 가장 돌아갈 액티비티입니다.-->
-        <activity android:name="com.ssh.sustain.ui.activity.MainActivity">
+        <!-- 앱이 실행될 때 가장 돌아갈 액티비티입니다. -->
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!--기타 액티비티-->
-        <!--메인 액티비티가 아닌 액티비티들은 이 아래에 정리해주세요-->
-
-
-        <!-- 나중에 쓰일지도 모르는 부분이기에 설정해두었습니다.
-        API24부터 file:// 경로가 막혔기에 content://로 치환하는 설정입니다.
-        <provider
-            android:authorities="${applicationId}.fileprovier"
-            android:name="androidx.core.content.FileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths"/>
-        </provider>
-        -->
     </application>
 
 </manifest>
