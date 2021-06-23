@@ -20,12 +20,11 @@ import com.ssh.sustain.ui.presenter.MainPresenter;
 
 import java.util.Objects;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base);
-
+        setContentView(R.layout.activity_main);
     }
 }
