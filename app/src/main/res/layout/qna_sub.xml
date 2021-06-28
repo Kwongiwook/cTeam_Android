@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--제가 생각했을때 이부분의 레이아웃은 원균이의 qna_writing으로 가면
+    조금 더 간단하고 보기 좋을거같습니다.
+    (제가 만들었지만 조금 조잡해보입니다.) -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"

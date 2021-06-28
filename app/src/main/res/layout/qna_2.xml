@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--체크박스를 선택하지 않고도 문의글만 눌렀을때 넘어가도 좋을거
+    같습니다-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
