@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 예약확인에서 이름을 누르면 넘어가는 예약확인 세부부분 -->
+<!-- 예약확인에서 이름을 누르면 넘어가는 예약확인 세부부분
+    expert_reservation → reservation_sub -->
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ffffff">
@@ -27,6 +29,9 @@
             android:textSize="40dp"
             android:textColor="#000000"/>
     </LinearLayout>
+    <!-- ↓밑에 부분은 사진의 컬러가 변경되었으면 좋겠습니다.
+      변경하고싶은 색상 : #ffcc40 /
+      참고 블로그 : https://leveloper.tistory.com/166-->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"

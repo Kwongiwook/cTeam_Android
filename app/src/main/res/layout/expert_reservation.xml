@@ -38,10 +38,11 @@
         android:id="@+id/text_Check2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="10:00  태윤T 두피 \n 11: 00 원균T 컷 + 두피\n12:00 경훈T 두피\n15:30지욱T 두피"
+        android:text="10:00 태윤T 두피 \n 11: 00 원균T 컷 + 두피\n12:00 경훈T 두피\n15:30지욱T 두피"
         android:textSize="25dp"
         android:layout_marginLeft="30dp"/>
-
+    <!--이름부분에 링크태그 같은걸 넣어서 reservation_sub로 보이게끔
+        하고싶습니다.-->
 
 
 
