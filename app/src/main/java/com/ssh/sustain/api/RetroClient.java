@@ -8,7 +8,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetroClient {
-    private static final String BASE_URL = "http://localhost:753";
+    private static final String BASE_URL = "http://localhost:753/";
 
     public static SampleAPI getSampleService() {
         return getInstance().create(SampleAPI.class);

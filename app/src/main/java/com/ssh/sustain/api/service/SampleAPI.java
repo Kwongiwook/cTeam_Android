@@ -5,7 +5,7 @@ import retrofit2.http.POST;
 
 public interface SampleAPI {
 
-    @POST(value = "/sample")
+    @POST(value = "sample")
     Call<String> sample();
 
 }
