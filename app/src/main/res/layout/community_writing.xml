@@ -5,7 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true">
 
     <TextView
         android:id="@+id/tvWrite"
@@ -36,7 +38,9 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
         android:layout_marginRight="20dp"
-        android:hint="내용" />
+        android:gravity="top"
+        android:hint="내용"
+        android:background="@drawable/border"/>
 
     <LinearLayout
         android:layout_width="match_parent"
