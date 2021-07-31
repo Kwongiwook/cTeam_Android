@@ -15,16 +15,16 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="?attr/selectableItemBackground">
 
 
             <ImageView
                 android:id="@+id/mainPageRcvImgV"
                 android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@mipmap/ic_launcher"/>
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_launcher" />
 
 
             <LinearLayout
@@ -35,18 +35,18 @@
                 <TextView
                     android:id="@+id/mainPageRcvTitleTv"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:textSize="35dp"
+                    android:layout_height="wrap_content"
                     android:text="제목"
-                    android:textColor="#456789"/>
+                    android:textColor="#456789"
+                    android:textSize="25dp" />
 
                 <TextView
                     android:id="@+id/mainPageRcvContentTv"
                     android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:textSize="26dp"
+                    android:layout_height="wrap_content"
                     android:text="내용"
-                    android:textColor="#987654"/>
+                    android:textColor="#987654"
+                    android:textSize="20dp" />
 
             </LinearLayout>
         </LinearLayout>

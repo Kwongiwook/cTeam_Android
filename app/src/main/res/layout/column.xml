@@ -4,7 +4,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:clickable="true">
 
     <!-- 이 이미지버튼을 누르면 이 사람의 마이페이지로 이동합니다.-->
     <ImageButton
@@ -32,7 +34,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="210dp"
         android:layout_marginTop="10dp">
 
         <!-- 칼럼 내용이 길면 스크롤 되게 스크롤 뷰로 했고 text 쪽은 예제??로 만들어봤습니다.-->
@@ -46,37 +48,4 @@
 
     </ScrollView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_marginTop="15dp">
-
-        <!-- 이전 칼럼으로 가는 버튼 -->
-        <Button
-            android:id="@+id/columnBackBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="left"
-            android:background="@drawable/column_btn"
-            android:gravity="center"
-            android:text="prev" />
-
-        <!-- 이건 버튼을 양쪽으로 붙이려고 편법을 좀 썻어요 -->
-        <View
-            android:layout_width="190dp"
-            android:layout_height="0dp"/>
-
-        <!-- 다음 칼럼으로 가는 버튼-->
-        <Button
-            android:id="@+id/columnNextBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="right"
-            android:background="@drawable/column_btn"
-            android:gravity="center"
-            android:text="next" />
-
-    </LinearLayout>
 </LinearLayout>
