@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--tools:context=".MainActivity"-->
+<!--지욱- 구글과 네이버 만 사용하기에 빼버렸습니다
+    하지만 이부분은 태윤씨가 한다고 햇는데....빼버렸어요 미안합니다-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -134,21 +136,6 @@
                 android:backgroundTint="#789"/>
 
 
-
-            <Button
-                android:id="@+id/loginKakao"
-                android:layout_marginTop="20dp"
-                android:layout_weight="0.84"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:text="카카오 로그인"
-                android:textColor="@color/black"
-                android:drawableLeft="@drawable/start_login_btn_kakano"
-                android:textStyle="bold"
-                android:layout_gravity="center"
-                android:gravity="left|center"
-                android:backgroundTint="#f7e600"
-                android:layout_marginLeft="20dp"/>
 
         </LinearLayout>
 
